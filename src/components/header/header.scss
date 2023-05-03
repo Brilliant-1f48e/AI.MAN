@@ -1,0 +1,47 @@
+.header{
+    margin-top: 54px;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.menu{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        gap: 64px;
+    }
+
+    &__link{
+        font-weight: $fw-medium;
+        font-size: 16px;
+        line-height: 20px;
+        transition: $transition;
+        color: $color-white-050;
+
+        &:hover{color: $color-white;}
+    }
+}
+
+.button-register{
+    font-weight: $fw-medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-white;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: $transition;
+
+    svg{
+        fill: $color-white;
+        transition: $transition;
+    }
+
+    &:hover svg{ fill: $color-green;}
+    &:hover{color: $color-green;}
+}
