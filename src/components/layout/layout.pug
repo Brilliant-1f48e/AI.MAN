@@ -1,0 +1,9 @@
+html(lang="ru")
+    block head
+    body
+        .root 
+            include Components/header/header.pug
+            main.page
+                block content
+            include Components/footer/footer.pug
+        script(src=require("../../views/index/main.js"))
