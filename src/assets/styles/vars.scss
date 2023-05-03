@@ -3,7 +3,7 @@ $ff-primary: 'Plus Jakarta Sans', sans-serif;
 $ff-secondary: 'Raleway', sans-serif;
 
 // container limited
-$limited: 1312px;
+$limited: 1342px;
 
 // media breakpoints
 $points-sm: 576.98px;
@@ -26,9 +26,10 @@ $color-white: #fff;
 $color-white-050: rgba($color-white, .50);
 
 $color-green: #A7F306;
+$color-yellow: #F3CD06;
 
-$color-linear-green-to-yellow: linear-gradient(308deg, $color-green, #F3CD06);
-$color-linear-white: linear-gradient(90deg, $color-white rgba($color-black, 0.3) 50%, $color-white);
+$color-linear-green-to-yellow: linear-gradient(308deg, $color-green, $color-yellow);
+$color-linear-white:linear-gradient(90deg, #FFFFFF, rgba($color-white, 0.3) 50%, #FFFFFF);;
 
 
 $transition: .3s;

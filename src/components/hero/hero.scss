@@ -1,0 +1,191 @@
+.hero{
+    margin-top: 113px;
+
+    .container{
+        position: relative;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    
+    &__img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        pointer-events: none;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 50%;
+            width: 300px;
+            background: linear-gradient(83.3deg, #1A1A1A 16.14%, rgba(26, 26, 26, 0) 95.65%);;
+        }
+    }
+
+    &__body{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__right{
+        display: flex;
+        flex-direction: column;
+
+        p{
+            margin-bottom: 48px;
+            max-width: 375px;
+        }
+    }
+    &__actions{
+        min-width: 400px;
+        padding-bottom: 285px;
+    }
+}
+
+.stats{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        &:first-child{
+            position: relative;
+
+            p{
+                position: relative;
+                z-index: 2;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 25%;
+                background: linear-gradient(to right, $color-background, rgba($color-background, 0));
+            }
+        }
+
+        &:last-child{
+            position: relative;
+
+            p{
+                position: relative;
+                z-index: 2;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                width: 50%;
+                background: linear-gradient(to left, $color-background, rgba($color-background, 0));
+            }
+        }
+    }
+
+    &__value{
+        color: $color-white;
+        font-size: 40px;
+        line-height: 52px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    &__item{
+        padding: 30px 64px 30px 32px;
+        background-color: #232323;
+        border-radius: 32px;
+        border: 1px solid rgba($color-white, .1);
+        
+    }
+    &__title{
+        font-weight: $fw-medium;
+        letter-spacing: normal;
+    }
+}
+
+
+.actions{
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        left: 198px;
+        top: 59px;
+        height: 100%;
+        width: 1px;
+        background-color: rgba($color-white, 0.2);
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+    &__row_right{
+        display: flex;
+        justify-content: flex-end;
+        
+        a{
+            position: relative;
+
+            &::after{
+                display: block;
+                content: "";
+                position: absolute;
+                left: -10px;
+                top: 0;
+                height: 100%;
+                width: 25%;
+                background: linear-gradient(to right, $color-background, rgba($color-background, 0));
+                transition: $transition;
+            }
+            
+            &:hover::after{
+                opacity: 0;
+            }
+            span{
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+.button{
+    display: inline-block;
+    font-weight: $fw-bold;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 120px;
+    padding: 24px 35px;
+
+    &_fill{
+        background-color: $color-white;
+        color: #1A1A1A;
+        transition: $transition;
+
+        &:hover{
+            background-color: $color-green;
+        }
+    }
+    &_border{
+        padding: 23px 27px 24px 28px;
+        color: $color-white;
+        border: 1px solid rgba($color-white, .1);
+        transition: $transition;
+
+        &:hover{
+            color: #1A1A1A;
+            background-color: $color-yellow;
+        }
+    }
+}

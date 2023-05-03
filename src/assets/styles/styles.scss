@@ -10,7 +10,17 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 
-h1{color: $color-linear-white;}
+h1{
+    color: transparent;
+    background: $color-linear-white;
+    background-clip: text;
+
+    span{
+        color: transparent;
+        background: $color-linear-green-to-yellow;
+        background-clip: text;
+    }
+}
 h2{
     font-size: 80px;
     line-height: 94px;
@@ -45,6 +55,7 @@ p{
 
 /* COMPONENTS */
 @import "Components/logo/logo.scss";
+
 /* SECTION */
 @import "Components/header/header.scss";
 @import "Components/hero/hero.scss";

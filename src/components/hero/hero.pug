@@ -1,2 +1,27 @@
 section.hero.outer 
-    .container 
+    .container
+        h1 FASTER DATA WITH 
+            span AI.
+        
+        .hero__img 
+            img(src=require("Assets/images/hero.png"), alt="Hero image")
+
+        .hero__body
+            .hero__stats.stats
+                ul.stats__wrapper
+                    li.stats__item
+                        p.stats__value 240+
+                        p.stats__title PARTNERS
+                    li.stats__item
+                        p.stats__value 92%
+                        p.stats__title FASTER TECHNOLOGY
+            
+            .hero__right
+                p Better data leads to more performance models. Performant models lead to faster deployment. 
+                .hero__actions.actions
+                    ul.actions__wrapper 
+                        li.actions__row
+                            a(class="button button_fill", href="/mock-address/change-me") GET STARTED
+                        li.actions__row.actions__row_right
+                            a(class="button button_border", href="/mock-address/change-me")
+                                span TALK TO SALES

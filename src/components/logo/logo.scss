@@ -4,7 +4,11 @@
     line-height: 28px;
     font-weight: $fw-bold;
     color: $color-white-050;
+    transition: $transition;
 
+    &:hover{
+        color: $color-white; 
+    }
 
     span{
         color: transparent;
