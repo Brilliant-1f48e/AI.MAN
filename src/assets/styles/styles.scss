@@ -3,16 +3,34 @@
 @import "vars";
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: $fw-bold;
-    font-size: 60px;
+    font-family: $ff-secondary;
+    font-weight: $fw-extrabold;
+    font-size: 120px;
+    line-height: 141px;
+    letter-spacing: 1px;
 }
 
-h2{font-size: 56px;}
-h3{font-size: 48px;}
-h4{font-size: 36px;}
-h5{font-size: 24px;}
-h6{font-size: 20px;}
+h1{color: $color-linear-white;}
+h2{
+    font-size: 80px;
+    line-height: 94px;
+    color: $color-white;
+    font-weight: $fw-bold;
+}
 
+h3{
+    font-size: 36px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+    font-weight: $fw-bold;
+    color: linear-gradient(270deg, #1A1A1A, $color-black 110);
+}
+
+p{
+    line-height: 200%;
+    letter-spacing: -0.03em;
+    color: $color-white-050;
+}
 .outer{
     padding-right: 20px;
     padding-left: 20px;
@@ -21,7 +39,7 @@ h6{font-size: 20px;}
 
 .container{
     width: 100%;
-    max-width: 1170px;
+    max-width: $limited;
     margin: 0 auto;
 }
 

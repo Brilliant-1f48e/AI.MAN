@@ -1,9 +1,9 @@
 // font-family
-$ff-primary: "";
-$ff-secondary: "";
+$ff-primary: 'Plus Jakarta Sans', sans-serif;
+$ff-secondary: 'Raleway', sans-serif;
 
 // container limited
-$limited: 1180px;
+$limited: 1312px;
 
 // media breakpoints
 $points-sm: 576.98px;
@@ -13,7 +13,6 @@ $points-xl: 1200.98px;
 $points-xxl: 1400.98px;
 
 // font-weight
-$fw-light: 300;
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-semibold: 600;
@@ -23,3 +22,6 @@ $fw-extrabold: 800;
 // colors
 $color-black: #000;
 $color-white: #fff;
+$color-white-050: rgba($color-white, .50);
+$color-linear-yellow-to-green: linear-gradient(308deg, #A7F306, #F3CD06);
+$color-linear-white: linear-gradient(90deg, $color-white rgba($color-black, 0.3) 50%, $color-white);
