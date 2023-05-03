@@ -44,8 +44,9 @@ p{
 }
 
 /* COMPONENTS */
-@import "../../components/header/header.scss";
-@import "../../components/hero/hero.scss";
-@import "../../components/footer/footer.scss";
-
+@import "Components/logo/logo.scss";
+/* SECTION */
+@import "Components/header/header.scss";
+@import "Components/hero/hero.scss";
+@import "Components/footer/footer.scss";
 /* UI */
