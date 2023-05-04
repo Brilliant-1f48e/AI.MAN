@@ -9,10 +9,4 @@
     &:hover{
         color: $color-white; 
     }
-
-    span{
-        color: transparent;
-        background: $color-linear-green-to-yellow;
-        background-clip: text;
-    }
 }
