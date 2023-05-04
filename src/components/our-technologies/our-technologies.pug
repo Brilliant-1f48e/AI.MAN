@@ -1,0 +1,22 @@
+include ./__item/__item.pug
+
+section.our-technologies.outer
+    .container
+        .our-technologies__header
+            h2 OUR TECHNOLOGIES
+        .swiper-container.our-technologies__tabs.tabs-our-technologies
+            .tabs-our-technologies__pagination.pagination-tabs-our-technologies
+                div(class="pagination-tabs-our-technologies__item _active") RILLCUY
+                div(class="pagination-tabs-our-technologies__item") TRUKAHH
+                div(class="pagination-tabs-our-technologies__item") ASELII
+                div(class="pagination-tabs-our-technologies__item") KOCKGMG
+                div(class="pagination-tabs-our-technologies__item") MDITURU
+            .swiper-wrapper.tabs-our-technologies__wrapper
+                .swiper-slide.slider-slide.tabs-our-technologies__tab
+                    +__item("RILLCUY", 1)
+                .swiper-slide.slider-slide.tabs-our-technologies__tab
+                    +__item("TRUKAHH", 2)
+                .swiper-slide.slider-slide.tabs-our-technologies__tab
+                    +__item("ASELII", 3)
+                .swiper-slide.slider-slide.tabs-our-technologies__tab
+                    +__item("MDITURU", 5)
