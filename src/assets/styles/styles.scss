@@ -33,7 +33,9 @@ h3{
     line-height: 200%;
     letter-spacing: 0.04em;
     font-weight: $fw-bold;
-    color: linear-gradient(270deg, #1A1A1A, $color-black 110);
+    color: transparent;
+    background: linear-gradient(270deg, #1A1A1A, $color-black 110%);
+    background-clip: text;
 }
 
 p{
@@ -59,5 +61,6 @@ p{
 /* SECTION */
 @import "Components/header/header.scss";
 @import "Components/hero/hero.scss";
+@import "Components/discount/discount.scss";
 @import "Components/footer/footer.scss";
 /* UI */

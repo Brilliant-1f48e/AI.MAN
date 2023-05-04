@@ -1,0 +1,13 @@
+.discount{
+    overflow-x: hidden;
+    padding: 30px 0px 28px;
+    background: $color-linear-green-to-yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    &__item{
+        white-space: nowrap;
+    }
+}

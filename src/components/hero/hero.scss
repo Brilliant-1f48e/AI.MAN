@@ -43,7 +43,7 @@
     }
     &__actions{
         min-width: 400px;
-        padding-bottom: 285px;
+        padding-bottom: 250px;
     }
 }
 
@@ -188,4 +188,8 @@
             background-color: $color-yellow;
         }
     }
+}
+
+.discount-hero{
+    background: $color-linear-green-to-yellow;
 }
