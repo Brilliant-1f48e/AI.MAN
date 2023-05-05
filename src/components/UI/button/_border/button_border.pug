@@ -1,0 +1,6 @@
+mixin button_border(text, mods = [])
+    - var className = "button button_border"
+    each mod in mods
+        - className += " " + mod
+    a(class=className, href="/mock-address/change-me")
+        span= text

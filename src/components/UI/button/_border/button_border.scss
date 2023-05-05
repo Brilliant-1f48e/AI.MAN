@@ -1,0 +1,13 @@
+.button_border{
+    padding: 24px 32px;
+    border: 1px solid $color-white-050;
+    
+    &:hover{
+        background-color: $color-yellow;
+        border: 1px solid #1A1A1A;
+        color: #1A1A1A;
+    }
+    &.button_arrow:hover svg{
+        fill: #1A1A1A;
+    }
+}

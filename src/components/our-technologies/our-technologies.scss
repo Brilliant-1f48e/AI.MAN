@@ -4,6 +4,9 @@
 
     &__header{
         margin-bottom: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -64,9 +67,38 @@
     }
 }
 
-.positions__wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: $color-white;
+.positions{
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: $color-white;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &::before{
+            content: "";
+            display: block;
+            margin-right: 16px;
+            width: 32px;
+            height: 32px;
+            background-color: rgba($color-white, .05);
+            border-radius: 50%;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 4px;
+            width: 24px;
+            height: 24px;
+            background-image: url("src/assets/icons/check.png");
+        }
+    }
 }
+

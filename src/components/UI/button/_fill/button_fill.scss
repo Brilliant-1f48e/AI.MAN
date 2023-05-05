@@ -1,0 +1,9 @@
+.button_fill{
+    background-color: $color-white;
+    color: #1A1A1A;
+    transition: $transition;
+
+    &:hover{
+        background-color: $color-green;
+    }
+}

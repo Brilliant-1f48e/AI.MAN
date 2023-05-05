@@ -1,0 +1,5 @@
+mixin button_fill(text, mods = [])
+    - var className = "button button_fill"
+    each mod in mods
+        - className += " " + mod
+    a(class=className, href="/mock-address/change-me")= text

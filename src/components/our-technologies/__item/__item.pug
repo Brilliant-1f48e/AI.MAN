@@ -8,7 +8,8 @@ mixin __item(title)
                 ul.positions__wrapper
                     li.positions__item Manage Your Datasets
                     li.positions__item Automate Document Processing
-                    li.positions__item Scale Advanced Annotations
-            a(class="button button_border", href="/mock-address/change-me") LEARN MORE
+                    li.positions__item Scale Advanced Annotations      
+            +button_arrow("LEARN MORE", ["button_border"])
+
         .tabs-our-technologies__item-img
             img(src=require("Assets/images/our-technologies.png"), alt="RILLCUY image")

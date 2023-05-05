@@ -46,6 +46,8 @@
         min-width: 400px;
         padding-bottom: 250px;
     }
+
+    .button_border{padding: 23px 27px 24px 28px;}
 }
 
 .stats{
@@ -157,36 +159,6 @@
                 position: relative;
                 z-index: 2;
             }
-        }
-    }
-}
-
-.button{
-    display: inline-block;
-    font-weight: $fw-bold;
-    font-size: 20px;
-    line-height: 25px;
-    border-radius: 120px;
-    padding: 24px 35px;
-
-    &_fill{
-        background-color: $color-white;
-        color: #1A1A1A;
-        transition: $transition;
-
-        &:hover{
-            background-color: $color-green;
-        }
-    }
-    &_border{
-        padding: 23px 27px 24px 28px;
-        color: $color-white;
-        border: 1px solid rgba($color-white, .1);
-        transition: $transition;
-
-        &:hover{
-            color: #1A1A1A;
-            background-color: $color-yellow;
         }
     }
 }
