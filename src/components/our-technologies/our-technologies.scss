@@ -8,14 +8,7 @@
         align-items: center;
         justify-content: space-between;
     }
-}
 
-.tabs-our-technologies{
-    overflow: hidden;
-
-    &__wrapper{
-        padding: 0 15px;
-    }
     &__item{
         display: flex;
         align-items: center;
@@ -27,6 +20,15 @@
         }
 
         .positions{margin-bottom: 48px;}
+        .button{display: inline-flex;}
+    }
+}
+
+.tabs-our-technologies{
+    overflow: hidden;
+
+    &__wrapper{
+        padding: 0 15px;
     }
 }
 
@@ -99,6 +101,7 @@
             height: 24px;
             background-image: url("src/assets/icons/check.png");
         }
+
     }
 }
 

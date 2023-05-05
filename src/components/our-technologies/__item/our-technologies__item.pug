@@ -1,6 +1,6 @@
-mixin __item(title)
-    .tabs-our-technologies__item
-        .tabs-our-technologies__item-content
+mixin our-technologies__item(title)
+    .our-technologies__item
+        .our-technologies__item-content
             h2= title
                 span.linear-color-text  AI.
             p Annotate large volumes of 3D sensor, image, and video data at high throughput. ML-powered pre-labeling and an automated quality assurance system ensure high quality annotations.
@@ -11,5 +11,5 @@ mixin __item(title)
                     li.positions__item Scale Advanced Annotations      
             +button_arrow("LEARN MORE", ["button_border"])
 
-        .tabs-our-technologies__item-img
+        .our-technologies__item-img
             img(src=require("Assets/images/our-technologies.png"), alt="RILLCUY image")
