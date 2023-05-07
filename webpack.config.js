@@ -1,5 +1,6 @@
 const path = require("path");
 const PugPlugin = require("pug-plugin");
+const autoprefixer = require("autoprefixer");
 
 module.exports = {
     entry: {
@@ -11,11 +12,11 @@ module.exports = {
         filename: 'assets/js/[name].[contenthash:8].js'
     },
     resolve: {
-      alias: {
-        Components: "/src/components/",
-        Assets: "/src/assets/",
-        Views: "/views/",
-      }
+        alias: {
+            Components: "/src/components/",
+            Assets: "/src/assets/",
+            Views: "/views/",
+        }
     },
     plugins: [
         new PugPlugin({
@@ -30,41 +31,58 @@ module.exports = {
     ],
     module: {
         rules: [
-          {
-            test: /\.pug$/,
-            loader: PugPlugin.loader
-          },
-          {
-            test: /\.(css|sass|scss)$/,
-            use: ['css-loader', 'sass-loader']
-          },
-          {
-            test: /\.(png|jpg|jpeg|ico)/,
-            type: 'asset/resource',
-            generator: {
-              filename: 'assets/img/[name].[hash:8][ext]'
+            {
+                test: /\.pug$/,
+                loader: PugPlugin.loader
+            },
+            {
+                test: /\.(css|sass|scss)$/,
+                use: [
+                    {
+                        loader: "css-loader"
+                    },
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    autoprefixer()
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        loader: "sass-loader"
+                    }
+                ]
+            },
+            {
+                test: /\.(png|jpg|jpeg|ico)/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/img/[name].[hash:8][ext]'
+                }
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/fonts/[name][ext][query]'
+                }
             }
-          },
-          {
-            test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
-            type: 'asset/resource',
-            generator: {
-              filename: 'assets/fonts/[name][ext][query]'
-            }
-          }
         ]
     },
     devServer: {
         static: {
-          directory: path.join(__dirname, 'dist')
+            directory: path.join(__dirname, 'dist')
         },
         watchFiles: {
-          paths: ['src/**/*.*', 'assets/scss/**/*.*'],
-          options: {
-            usePolling: true
-          }
+            paths: ['src/**/*.*', 'assets/scss/**/*.*'],
+            options: {
+                usePolling: true
+            }
         }
-      },
-      stats: 'errors-only'
+    },
+    stats: 'errors-only'
 
 }
