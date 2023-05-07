@@ -1,0 +1,7 @@
+mixin development__item(title, description, imgSrc)
+    .development__item
+        .development__item-img
+            img(src=imgSrc, alt=`${title} image`)
+        .development__item-content
+            p.development__item-title= title
+            p.development__item-description= description

@@ -1,0 +1,48 @@
+include ./__item/development__item
+
+section.development.outer
+    .container
+        h2 THE DEVELOPMENT OF AI
+        .development__body
+            .development__row
+                +development__item(
+                    "Annotate",
+                    "Annotate large volumes of 3D sensor, image, and video data.",
+                    require("Assets/images/development/annotate.png")
+                )
+                .development__arrow
+                    .development__arrow-img
+                        img(src=require("Assets/images/development/arrow-right.png"), alt="Arrow right")
+                +development__item(
+                    "Manage",
+                    "Retrieve human insights for search relevance, ecommerce.",
+                    require("Assets/images/development/manage.png")
+                )
+            .development__row
+                +development__item(
+                    "Evaluate",
+                    "Quickly choose what data to label with active learning.",
+                    require("Assets/images/development/evaluate.png")
+                )
+                .development__arrow
+                    .development__arrow-img
+                        img(src=require("Assets/images/development/arrow-left.png"), alt="Arrow right")
+                +development__item(
+                    "Automate",
+                    "Achieve robust document understanding and extraction.",
+                    require("Assets/images/development/automate.png")
+                )
+            .development__row
+                +development__item(
+                    "Collect",
+                    "Collect and generate, image representative device, video.",
+                    require("Assets/images/development/collect.png")
+                )
+                .development__arrow
+                    .development__arrow-img
+                        img(src=require("Assets/images/development/arrow-right.png"), alt="Arrow right")
+                +development__item(
+                    "Generate",
+                    "Augment ground-truth training data with infinite varieties",
+                    require("Assets/images/development/generate.png")
+                )
