@@ -1,0 +1,45 @@
+.things-we-support{
+    padding-bottom: 200px;
+
+    &__item{
+        &-img{
+            margin-bottom: 36px;
+            img{width: 100%;}
+        }
+        p{
+            color: $color-white;
+            font-weight: $fw-bold;
+            font-size: 30px;
+            line-height: 160%;
+        }
+    }
+}
+
+.slider-things-we-support{
+    overflow: hidden;
+
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    &__wrapper{height: auto;}
+    &-button{
+        width: 120px;
+        height: 120px;
+        background-color: $color-white;
+        transition: $transition;
+
+        svg{
+            fill: $color-black;
+            transition: $transition;
+        }
+
+        &._disabled{
+            background-color: transparent;
+
+            svg{fill: $color-white;}
+        }
+    }
+}

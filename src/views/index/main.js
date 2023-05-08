@@ -12,3 +12,12 @@ const ourTechnologiesTabs = new Swiper(".tabs-our-technologies", {
         },
     },
 });
+
+const thingsWeSupport = new Swiper(".slider-things-we-support", {
+    slidesPerView: 4.5,
+    navigation: {
+        nextEl: ".slider-things-we-support-button-next",
+        prevEl: ".slider-things-we-support-button-prev",
+        disabledClass: "_disabled"
+    }
+});
