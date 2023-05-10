@@ -9,11 +9,17 @@
 
 .slider-what-they-say{
     overflow-x: hidden;
+    position: relative;
 
     &-navigation{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        z-index: 1;
     }
     &-button{
         background-color: transparent;
@@ -34,6 +40,8 @@
     &__author{
         display: flex;
         align-items: center;
+        justify-content: center;
+        height: 100px;
 
         &-name{
             font-size: 32px;
