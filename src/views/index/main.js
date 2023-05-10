@@ -13,7 +13,7 @@ const ourTechnologiesTabs = new Swiper(".tabs-our-technologies", {
     },
 });
 
-const thingsWeSupport = new Swiper(".slider-things-we-support", {
+const thingsWeSupportSlider = new Swiper(".slider-things-we-support", {
     slidesPerView: 4.5,
     navigation: {
         nextEl: ".slider-things-we-support-button-next",
@@ -23,7 +23,7 @@ const thingsWeSupport = new Swiper(".slider-things-we-support", {
 });
 
 
-const whatThaySay = new Swiper(".slider-what-they-say", {
+const whatThaySaySlider = new Swiper(".slider-what-they-say", {
     navigation: {
         nextEl: ".slider-what-they-say-button-next",
         prevEl: ".slider-what-they-say-button-prev",
@@ -31,3 +31,15 @@ const whatThaySay = new Swiper(".slider-what-they-say", {
     }
 });
 
+
+const supportedByUpperSlider = new Swiper(".slider-supported-by-upper", {
+    slidesPerView: 5,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+});
+
+const supportedByLowerSlider = new Swiper(".slider-supported-by-lower", {
+    slidesPerView: 5,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+});
