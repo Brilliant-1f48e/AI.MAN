@@ -1,0 +1,17 @@
+.navigation{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        gap: 64px;
+    }
+
+    &__link{
+        font-weight: $fw-medium;
+        font-size: 16px;
+        line-height: 20px;
+        transition: $transition;
+        color: $color-white-050;
+
+        &:hover{color: $color-white;}
+    }
+}

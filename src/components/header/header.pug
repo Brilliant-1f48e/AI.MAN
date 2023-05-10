@@ -1,16 +1,6 @@
 header.header.outer 
     .container
         +logo()
-        nav.menu
-            ul.menu__wrapper 
-                li.menu__item
-                    a(href="/mock-address/change-me" class="menu__link") PRODUCTS
-                li.menu__item
-                    a(href="/mock-address/change-me" class="menu__link") SOLUTIONS
-                li.menu__item
-                    a(href="/mock-address/change-me" class="menu__link") CUSTOMER
-                li.menu__item
-                    a(href="/mock-address/change-me" class="menu__link") PRICING
-                li.menu__item
-                    a(href="/mock-address/change-me" class="menu__link") RESOURCES
+        include Components/navigation/navigation.pug
+
         +button_arrow("REGISTER NOW")
