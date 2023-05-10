@@ -24,7 +24,7 @@
         justify-content: space-between;
         margin-bottom: 80px;
     }
-    &__wrapper{height: auto;}
+
     &-button{
         width: 120px;
         height: 120px;
@@ -37,6 +37,7 @@
         }
 
         &._disabled{
+            cursor: default;
             background-color: transparent;
 
             svg{fill: $color-white;}

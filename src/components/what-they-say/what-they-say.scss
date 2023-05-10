@@ -1,0 +1,64 @@
+.what-they-say{
+    padding-bottom: 200px;
+
+    h2{
+        margin-bottom: 80px;
+        text-align: center;
+    }
+}
+
+.slider-what-they-say{
+    overflow-x: hidden;
+
+    &-navigation{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-button{
+        background-color: transparent;
+        svg{
+            fill: $color-white;
+            transition: $transition;
+        }
+        &._disabled{cursor: default;}
+        &._disabled svg{fill: $color-white-050;}
+    }
+    &__quote{
+        font-size: 48px;
+        line-height: 200%;
+        margin-bottom: 74px;
+
+        span{color: $color-white;}
+    }
+    &__author{
+        display: flex;
+        align-items: center;
+
+        &-name{
+            font-size: 32px;
+            line-height: 200%;
+            font-weight: $fw-medium;
+            padding-right: 100px;
+            margin-right: 36px;
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 0;
+                height: 2px;
+                width: 64px;
+                background-color: $color-white;
+            }
+        }
+        &-job-title{
+            font-weight: $fw-medium;
+            font-size: 24px;
+            line-height: 200%;
+            letter-spacing: -0.03em;
+            color: $color-white;
+        }
+    }
+}

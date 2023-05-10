@@ -21,3 +21,13 @@ const thingsWeSupport = new Swiper(".slider-things-we-support", {
         disabledClass: "_disabled"
     }
 });
+
+
+const whatThaySay = new Swiper(".slider-what-they-say", {
+    navigation: {
+        nextEl: ".slider-what-they-say-button-next",
+        prevEl: ".slider-what-they-say-button-prev",
+        disabledClass: "_disabled"
+    }
+});
+
