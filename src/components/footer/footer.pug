@@ -1,2 +1,14 @@
 footer.footer.outer 
     .container
+        .footer__left
+            include Components/logo/logo.pug
+            p Better data leads to more performance models. Performant models lead to faster deployment. 
+        .footer__right 
+            include Components/navigation/navigation.pug
+            .footer__copyright.copyright
+                p © 2022 AI-MAN. All RIGHT RESERVED
+                ul.copyright__links 
+                    li.copyright__links-item
+                        a(href="mock-address/change-me", class="copyright__links-link") TERMS AND CONDITIONS
+                    li.copyright__links-item
+                        a(href="mock-address/change-me", class="copyright__links-link") PRIVACY POLICY
