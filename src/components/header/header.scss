@@ -6,22 +6,13 @@
         align-items: center;
         justify-content: space-between;
     }
-}
 
-.menu{
-    &__wrapper{
+    .menu{
         display: flex;
         align-items: center;
-        gap: 64px;
+        gap: 154px;
     }
-
-    &__link{
-        font-weight: $fw-medium;
-        font-size: 16px;
-        line-height: 20px;
-        transition: $transition;
-        color: $color-white-050;
-
-        &:hover{color: $color-white;}
-    }
+    .button{flex-shrink: 0}
 }
+
+
