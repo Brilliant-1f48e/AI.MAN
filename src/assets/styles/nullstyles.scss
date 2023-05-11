@@ -41,9 +41,8 @@ body{
 	color: $color_black;
 	font-weight: $fw-regular;
     background-color: $color-background;
-	// &._lock{
-	// 	overflow: hidden;
-	// }
+    
+	&._lock{overflow: hidden;}
 }
 
 input,button,textarea{font-family: $ff-primary;}

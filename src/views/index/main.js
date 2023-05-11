@@ -1,3 +1,6 @@
+import {Burger} from "../../assets/js/burger.js";
+
+
 const paginationItems = ["RILLCUY", "TRUKAHH", "ASELII", "KOCKGMG", "MDITURU"];
 
 const ourTechnologiesTabs = new Swiper(".tabs-our-technologies", {
@@ -43,3 +46,5 @@ const supportedByLowerSlider = new Swiper(".slider-supported-by-lower", {
     centeredSlides: true,
     centeredSlidesBounds: true,
 });
+
+const menuBurger = new Burger(".menu", {});

@@ -1,9 +1,8 @@
 header.header.outer 
     .container
         include Components/logo/logo.pug
+        div(class="menu__icon" aria-label="Menu burger")
+            span
         .menu 
-            div(class="menu__icon" aria-label="Ьenu burger")
-                span 
             include Components/navigation/navigation.pug
-
             +button_arrow("REGISTER NOW")
