@@ -1,0 +1,1 @@
+https://vxid25bd.github.io/AI.MAN/dist/
